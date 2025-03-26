@@ -2,10 +2,9 @@
 // DOM 탐색 메소드 : document.querySelector(): 한개 , document.querySelectorAll() : 여러개~
 const shortcut = document.querySelector(".shortcut");
 
-shortcut.addEventListener("click mouseenter", showLayer);
+shortcut.addEventListener("click", showLayer);
 
 function showLayer(){
     const layer1 = document.querySelector("#layer1");
-    console.log(layer1);
-    alert("11111")
+    layer1.style.display = "block";
 }
