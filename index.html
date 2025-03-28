@@ -7,20 +7,41 @@
     <link rel="stylesheet" href="layout.css">
 </head>
 <body>
-    <div id="layer1">
-        <h1>바로가기</h1>
-        <div class="login-icons"></div>
-        <div class="services">
-            <div class="news"></div>
-            <div class="finance"></div>
-            <div class="entertainment"></div>
-            <div class="shopping"></div>
-            <div class="membership"></div>
-            <div class="auth"></div>            
-        </div>
-    </div>
+    
     <header>
-        <div class="container d-flex">
+        <div class="container d-flex pos-relative">
+            <div id="layer1" class="pos-absolute">
+                <h1 class="layer-title">바로가기</h1>
+                <div class="login-icons">
+                    <p><strong>로그인</strong> 하세요 &gt;</p>
+                    <div class="shortcut-container d-flex">
+                        <div class="icon icon-mail">
+                            <img src="images/mail-icon.png" alt="이메일">
+                            <p>메일</p>
+                        </div>
+                        <div class="icon icon-cafe">
+                            <img src="images/cafe-icon.png" alt="이메일">
+                            <p>카페</p>
+                        </div>
+                        <div class="icon icon-store">
+                            <img src="images/store-icon.png" alt="이메일">
+                            <p>스토어</p>
+                        </div>
+                        <div class="icon icon-blog">
+                            <img src="images/blog-icon.png" alt="이메일">
+                            <p>블로그</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="services">
+                    <div class="news"></div>
+                    <div class="finance"></div>
+                    <div class="entertainment"></div>
+                    <div class="shopping"></div>
+                    <div class="membership"></div>
+                    <div class="auth"></div>            
+                </div>
+            </div>
             <div class="icons d-flex">
                 <div class="shortcut">
                     <a href="#"><img src="images/shortcut.png" alt="바로가기"></a>
@@ -41,6 +62,7 @@
                 </div>
             </div>
         </div>
+        
     </header>
     <main></main>
     <footer></footer>

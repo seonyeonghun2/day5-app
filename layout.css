@@ -1,10 +1,17 @@
 @charset "utf-8";
-
+body {
+    height: 3000px;
+}
 .container {
     width: 1280px;
     margin: 0 auto;
 }
-
+.pos-absolute {
+    position: absolute
+}
+.pos-relative {
+    position: relative
+}
 .d-flex {
     display: flex
 }
@@ -15,4 +22,22 @@
 
 #layer1 {
     display: none; /* 표시 : 안함 */
+    top: 40px;
+    left: 0;
+    width: 380px;
+    border: 1px solid #efefef;
+    background-color: rgb(248, 251, 252);
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    padding: 1rem
+}
+
+.layer-title {
+    font-size: 1.125rem;
+    border-bottom: 1px solid rgb(149, 149, 149);
+    padding-bottom: 10px
+}
+
+.shortcut-container {
+    justify-content: space-around; 
 }
