@@ -30,7 +30,9 @@ fieldset {
 .gap-3 {
     gap: 3rem
 }
-
+.gap-5 {
+    gap: 5%
+}
 .ml-auto {
     margin-left: auto
 }
@@ -75,4 +77,53 @@ fieldset {
 /* 후손 선택자 : icon 클래스 후손중에서 p 요소의 스타일 정의 */
 .icon p {
     text-align: center;
+}
+
+/* ------------------------ layouts --------------------- */
+.main-area {
+    min-width: 70%
+}
+.ad {
+    height: 130px;
+    background-color:burlywood
+}
+.news {
+    height: 250px;
+    background-color:cadetblue
+}
+.shopping {
+    height: 200px;
+    background-color:coral
+}
+
+.sub-area {
+    min-width: 25%
+}
+.login {
+    background-color:cornflowerblue;
+    height:120px
+}
+.happy-bean {
+    height: 180px;
+    background-color:chartreuse
+}
+.memorial {
+    background-color:darkorchid
+}
+
+.footer-ad {
+    height: 80px;
+    background-color:rgb(255, 111, 0)
+}
+.news{
+   height: 60px;
+    background-color:rgb(0, 106, 255) 
+}
+.partner{
+  height: 100px;
+    background-color:rgb(255, 0, 247)  
+}
+.extra {
+height: 120px;
+    background-color:rgb(255, 230, 0)
 }
