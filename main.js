@@ -14,3 +14,15 @@ function hideLayer(){
     const layer1 = document.querySelector("#layer1");
     layer1.style.display = "none"; // css에서 block, flex, grid..표시  vs  none : 숨김
 }
+
+// 폼 검색을 요청하면!! (=검색어를 입력하고, 검색 버튼을 누를때)
+const searchForm = document.querySelector("#search_form");
+searchForm.addEventListener("click", getResult);
+
+function getResult(e){
+    e.preventDefault(); // 기본 동작을 실행하지 않도록(prevent)
+    fetch('http://localhost:3000/news')
+      .then(response => response.json())
+      .then(json => console.log(json))
+    // 응답온 정보를 화면에 보여주기! (ex.검색결과, 유투브영상 목록, 상품목록,..)
+}
